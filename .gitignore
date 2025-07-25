@@ -4,3 +4,4 @@ composer.phar
 .env
 .phpunit.result.cache
 .vscode
+composer.lock

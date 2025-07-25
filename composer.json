@@ -1,5 +1,5 @@
 {
-    "name": "cronofy/cronofy",
+    "name": "simplicate/cronofy",
     "description": "SDK for Cronofy - the Scheduling Platform for Business",
     "version": "v1.7.3",
     "require": {

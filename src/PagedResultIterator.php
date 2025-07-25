@@ -2,6 +2,8 @@
 
 namespace Cronofy;
 
+use Traversable;
+
 class PagedResultIterator implements \IteratorAggregate
 {
     private $cronofy;
@@ -38,14 +40,14 @@ class PagedResultIterator implements \IteratorAggregate
         }
     }
 
-    public function getIterator()
+    public function getIterator(): Traversable
     {
         return $this->each();
     }
 
     private function getPage($url, $urlParams = '')
     {
-        list ($result, $status_code) = $this->cronofy->httpClient->getPage($url, $this->authHeaders, $urlParams);
+        [$result, $status_code] = $this->cronofy->httpClient->getPage($url, $this->authHeaders, $urlParams);
 
         return $this->cronofy->handleResponse($result, $status_code);
     }

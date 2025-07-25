@@ -1,9 +1,9 @@
 {
     "name": "cronofy/cronofy",
     "description": "SDK for Cronofy - the Scheduling Platform for Business",
-    "version": "v1.7.3",
+    "type": "library",
     "require": {
-        "php": ">=7.1"
+        "php": "^8.1"
     },
     "autoload": {
         "files": [
